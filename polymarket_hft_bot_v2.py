@@ -878,7 +878,7 @@ class FeedManager:
             for asset in CONFIG["TRACKED_ASSETS"]
             if asset in CONFIG["BINANCE_STREAMS"]
         ]
-        stream_url = f"wss://stream.binance.com:9443/stream?streams={'/'.join(streams)}"
+        stream_url = f"wss://stream.binance.us:9443/stream?streams={'/'.join(streams)}"
 
         # Reverse lookup: stream name -> asset
         stream_to_asset = {}
